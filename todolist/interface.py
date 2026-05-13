@@ -1,7 +1,7 @@
 def mostra_menu():
     """Stampa le opzioni disponibili nel terminale."""
     print("\n" + "="*30)
-    print("     📌 TOOL PROMEMORIA")
+    print("      TOOL PROMEMORIA")
     print("="*30)
     print("1. Visualizza promemoria")
     print("2. Aggiungi nuovo")
@@ -15,7 +15,7 @@ def stampa_lista(lista_promemoria):
     Prima quelli importanti, poi gli altri.
     """
     if not lista_promemoria:
-        print("\n📭 La lista è vuota. Goditi il tuo tempo libero!")
+        print("\n La lista è vuota.")
         return
 
     # LOGICA DI ORDINAMENTO: 
@@ -26,7 +26,7 @@ def stampa_lista(lista_promemoria):
     print("\n--- I TUOI PROMEMORIA ---")
     for p in lista_ordinata:
         # Icona per l'importanza
-        prefisso = "🔥 [IMPORTANTE]" if p['importante'] else "📝"
+        prefisso = " [IMPORTANTE]" if p['importante'] else ""
         
         # Icona per il completamento
         stato = "[X]" if p['completato'] else "[ ]"
