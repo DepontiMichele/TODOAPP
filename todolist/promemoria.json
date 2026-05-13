@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "testo": "ciao sono michele",
+        "importante": true,
+        "completato": true
+    },
+    {
+        "id": 2,
+        "testo": "manca poco alla pausa",
+        "importante": true,
+        "completato": false
+    },
+    {
+        "id": 3,
+        "testo": "latte",
+        "importante": false,
+        "completato": false
+    },
+    {
+        "id": 4,
+        "testo": "pane",
+        "importante": false,
+        "completato": false
+    },
+    {
+        "id": 5,
+        "testo": "compito",
+        "importante": true,
+        "completato": false
+    }
+]
