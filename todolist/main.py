@@ -16,7 +16,7 @@ def start_tool():
         if scelta == "1":
             # La lista viene già mostrata all'inizio del loop, 
             # ma possiamo aggiungere un messaggio di refresh.
-            print("\n🔄 Lista aggiornata.")
+            print("\n Lista aggiornata.")
             
         elif scelta == "2":
             # Aggiunta (Member 2 e 3)
@@ -26,7 +26,7 @@ def start_tool():
             
             promemoria_list = logic.aggiungi_promemoria(promemoria_list, testo, importante)
             db.salva_dati(promemoria_list)
-            print("✅ Promemoria aggiunto correttamente!")
+            print(" Promemoria aggiunto correttamente!")
 
         elif scelta == "3":
             # Modifica stato (Member 2 e 3)
@@ -36,18 +36,18 @@ def start_tool():
                 successo, promemoria_list = logic.segna_completato(promemoria_list, id_prom)
                 if successo:
                     db.salva_dati(promemoria_list)
-                    print("✅ Stato aggiornato con successo!")
+                    print(" Stato aggiornato con successo!")
                 else:
-                    print("❌ ID non trovato nella lista.")
+                    print(" ID non trovato nella lista.")
             except ValueError:
-                print("⚠️ Errore: Inserisci un numero per l'ID.")
+                print(" Errore: Inserisci un numero per l'ID.")
 
         elif scelta == "4":
-            print("🚀 Chiusura del tool. Buon lavoro!")
+            print(" Chiusura del tool. Buon lavoro!")
             break
         
         else:
-            print("⚠️ Opzione non valida, riprova.")
+            print(" Opzione non valida, riprova.")
 
 if __name__ == "__main__":
     start_tool()
